@@ -9,6 +9,9 @@ COPY ./testsite/ /usr/share/nginx/html/
 COPY ./letsencrypt/ /etc/letsencrypt/
 #COPY ./serverconf/ /etc/nginx/conf.d/
 
+EXPOSE 80
+
 ADD default.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 80
+CMD bash run.sh
+
