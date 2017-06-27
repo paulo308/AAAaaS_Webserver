@@ -9,6 +9,8 @@ COPY ./testsite/ /usr/share/nginx/html/
 COPY ./letsencrypt/ /etc/letsencrypt/
 COPY ./serverconf/ /etc/nginx/conf.d/
 
+ADD serverconf/default.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 80
 EXPOSE 443
 EXPOSE 8080
