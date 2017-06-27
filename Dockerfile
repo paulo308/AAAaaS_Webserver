@@ -7,10 +7,8 @@ RUN apt-get update && apt-get -y install nano bash apt-utils sudo lftp python3
 
 COPY ./testsite/ /usr/share/nginx/html/
 COPY ./letsencrypt/ /etc/letsencrypt/
-COPY ./serverconf/ /etc/nginx/conf.d/
+#COPY ./serverconf/ /etc/nginx/conf.d/
 
-ADD serverconf/default.conf /etc/nginx/conf.d/default.conf
+ADD default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
-EXPOSE 443
-EXPOSE 8080
