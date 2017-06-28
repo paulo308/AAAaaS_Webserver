@@ -13,5 +13,5 @@ EXPOSE 80
 
 ADD default.conf /etc/nginx/conf.d/default.conf
 
-CMD bash run.sh
+#CMD bash run.sh
 
