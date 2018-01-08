@@ -18,4 +18,4 @@ ADD run.sh /
 
 #CMD bash run.sh
 RUN chmod +x /run.sh
-RUN /run.sh
+
