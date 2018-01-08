@@ -13,7 +13,8 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
-#ADD default.conf /etc/nginx/conf.d/default.conf
+ADD default.conf /etc/nginx/conf.d/default.conf
+ADD run.sh /
 
 #CMD bash run.sh
 RUN chmod +x /run.sh
