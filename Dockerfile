@@ -18,5 +18,5 @@ EXPOSE 443
 COPY run.sh /tmp/
 
 #CMD bash run.sh
-RUN chmod +x /tmp/run.sh && mv /tmp/default.conf /etc/nginx/conf.d/default.conf
+RUN chmod +x /tmp/run.sh
 
