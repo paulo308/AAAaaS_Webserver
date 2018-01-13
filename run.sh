@@ -12,10 +12,10 @@ echo replacing ___KEY_PATH___/$KEY_PATH
 echo replacing ___PROXY_IP___/$PROXY_IP
 echo replacing ___PROXY_PORT___/$PROXY_PORT
 
-sed -i "s/___CERT_PATH___/$CERT_PATH/g" /tmp/default.conf
-sed -i "s/___KEY_PATH___/$KEY_PATH/g" /tmp/default.conf
-sed -i "s/___PROXY_IP___/$PROXY_IP/g" /tmp/default.conf
-sed -i "s/___PROXY_PORT___/$PROXY_PORT/g" /tmp/default.conf
+sed -i "s@___CERT_PATH___@$CERT_PATH@g" /tmp/default.conf
+sed -i "s@___KEY_PATH___@$KEY_PATH@g" /tmp/default.conf
+sed -i "s@___PROXY_IP___@$PROXY_IP@g" /tmp/default.conf
+sed -i "s@___PROXY_PORT___@$PROXY_PORT@g" /tmp/default.conf
 
 cat /etc/nginx/default.conf
 
