@@ -31,3 +31,4 @@ echo new conf on nginx location
 cat /etc/nginx/default.conf
 
 nginx -g 'daemon off;'
+service nginx start
