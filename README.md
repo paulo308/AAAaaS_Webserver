@@ -3,6 +3,9 @@ AAAaaS Webserver is composed by a Nginx Server acting as Reverve Proxy. It conne
 
 In this repository it is possible to find two ways of deployment using Docker containers. One way recurring to Marathon and another as standalone. Both ways demand a consequent deployment of the complementary services: web application and database).
 
+Docker Hub link (for built images):
+https://hub.docker.com/r/paulo308/aaaaas_webserver/
+
 # Master (or envParams) branch 
 
 It is to be used with marathon. The JSON file inserted in marathon to launch the container must contain main server Address, Proxy Port, External Port, as well as path for .key and .crt files of the SSL certificate for HTTPS communications. Must run as well the run script (run.sh) present in /tmp directory.
