@@ -49,3 +49,4 @@ Note that it is necessary to deploy the remaing containers of the AAA service to
 * Web Application (https://github.com/paulo308/AAAaaS_Webapp)
 * Database (https://github.com/paulo308/AAAaaS_Mongodb)
 
+ Please note that if you choose to use this versions, you should manually modify the configuration files provided before deployment and building Docker images. Namelly, Nginx configuration file for domain, ports and certificates location and Web App for email domain and database IP and Port.
